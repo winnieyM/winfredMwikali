@@ -160,6 +160,24 @@ button:hover {
   color: #555;
   font-size: 18px;
 }
+#counts {
+  position: relative; /* To allow z-index to take effect */
+  z-index: 10; /* Set the z-index for the section */
+}
+
+.profile-image {
+  position: absolute; /* Allows the image to be placed freely within the container */
+  right: 0; /* Position the image on the right end of the section */
+  top: 1%; /* Vertically center the image */
+  transform: translateY(-50%); /* Adjust vertical centering */
+  z-index: 15px; /* Ensure the image is above other elements */
+  height: 300px;
+  width: 100%;
+  max-width: 270px;
+  margin-left: 2px;
+  justify-items: right;
+}
+
 
 .deep-red-background {
   background-color: #8B0000;
@@ -197,13 +215,6 @@ button:hover {
   margin: 0 15px;
 }
 
-.profile-image {
-  height: 250px;
-  width: 100%;
-  max-width: 270px;
-  margin-left: 2px;
-  justify-items: right;
-}
 
 .container {
   gap: 20px;
@@ -234,14 +245,17 @@ button:hover {
 }
 
 .icon:hover {
-  color: #004d40;
+  color: #052e27;
   transform: scale(1.1);
+  background-color: #8B0000;
+  
 }
+
 
 .icon:focus,
 .icon:active {
   color: #0c9122;
-  background-color: rgba(41, 171, 135, 0.1);
+  background-color: rgba(8, 88, 88, 0.1);
   border-radius: 4px;
   padding: 2px 4px;
 }
