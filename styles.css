@@ -190,13 +190,7 @@ button:hover {
   z-index: 10; /* Set the z-index for the section */
 }
 
-.profile-image {
-  position: absolute; /* Allows the image to be placed freely within the container */
-  right: 0; /* Position the image on the right end of the section */
-  top: 50%; /* Vertically center the image */
-  transform: translateY(-50%); /* Adjust vertical centering */
-  z-index: 20; /* Ensure the image is above other elements */
-}
+
 
 
 #counts .container .row {
