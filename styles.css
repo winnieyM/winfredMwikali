@@ -7,6 +7,7 @@
 
 
 
+
 .sectionheader {
   margin-bottom: 30px;
 }
@@ -166,6 +167,19 @@ button:hover {
   padding: 20px 0;
   height: 150px;
 }
+#counts {
+  position: relative; /* To allow z-index to take effect */
+  z-index: 10; /* Set the z-index for the section */
+}
+
+.profile-image {
+  position: absolute; /* Allows the image to be placed freely within the container */
+  right: 0; /* Position the image on the right end of the section */
+  top: 50%; /* Vertically center the image */
+  transform: translateY(-50%); /* Adjust vertical centering */
+  z-index: 20; /* Ensure the image is above other elements */
+}
+
 
 #counts .container .row {
   display: flex;
